@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+            .bton {
+    background: transparent;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    cursor: pointer;
+}
+.bton:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #b39ddb;
+    content: '';
+    z-index: -1;
+    -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    will-change: height;
+}
+.bton:hover:after {
+    height: 100%;
+}
+.bton:hover {
+    color: #FFF;
+}
+*:after {
+    outline: none;
+}
+            #mainjes{
+                margin-top: 350px;
+                padding-top: 50px;
+            }
+        </style>
+    <title>SpandanD16</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper red accent-3">
+          <div class="container">
+            <ul class="left hide-on-med-and-down">
+                <li><a href="" class="bton center">Home</a></li>
+                <li><a href="" class="bton">Services</a></li>
+                <li><a href="" class="bton">Blog</a></li>
+              </ul>
+            <a href="#" class="brand-logo center">Programmibiz</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="" class="bton">About</a></li>
+              <li><a href="" class="bton">Contact</a></li>
+              <li><a href="" class="btn white red-text">Login</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    
+      <ul class="sidenav red accent-3" id="mobile-links">
+        <h4 style="margin-left: 15px;" class="white-text">Wellcome !!</h4>
+        <hr style="border-top: 2px solid white;">
+        <li><a href="" class="white-text">Home</a></li>
+        <li><a href="" class="white-text">Services</a></li>
+        <li><a href="" class="white-text">Blog</a></li>
+        <li><a href="" class="white-text">About</a></li>
+        <li><a href="" class="white-text">Contact</a></li>
+        <li><a href="" class="btn white red-text">Login</a></li>
+      </ul>
+<div class="container white" id="mainjes">
+  <h4 class="center-align" style="letter-spacing: 4px;">GAMES DESCRIPTION</h4>
+  <br>
+    <div class="container">
+        <div class="row">
+          <!-- Copy from here to add one more container with modal -->
+          <div class="col s12 l6">
+            <div class="card">
+              <div class="card-image">
+                <div class="video-container">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/2GIVVsTKTLg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <a href="#" class="halfway-fab btn-floating deep-purple lighten-5 pulse">
+                  <img src="https://img.icons8.com/color/42/000000/ubisoft.png"/>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Watch Dogs 2</span>
+                <p class="floating text">
+                  Company : Ubisoft<br></p>
+                  Initial Release  : 15 November 2016<br>
+                  Genre : Action-Adventure Game
+              </div>
+              <div class="card-action">
+                <a href="#game1" class="btn orange modal-trigger">More details</a>
+              </div>
+              <div class="modal bottom-sheet modal-fixed-footer" id="game1">
+                <div class="modal-content">
+                  <h4>Hey</h4>
+                  <p>95% Google Users Like this Game<br>
+                    Platforms : PlayStation 4, Microsoft Windows, Xbox One...more text here<br>
+                  </p>
+                </div>
+                  <div class="modal-footer">
+                    <a href=" " class="btn red">Close</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 l6">
+            <div class="card">
+              <div class="card-image">
+                  <img src="https://i.ytimg.com/vi/_UB5hpk0iqg/maxresdefault.jpg">
+                <a href="#" class="halfway-fab btn-floating deep-purple lighten-5 pulse">
+                  <img src="https://img.icons8.com/ios/100/000000/rockstar-games.png"/>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Grand Theft Auto 5</span>
+                <p class="floating text">
+                  Company : Rockstar<br></p>
+                  Initial Release  : 17 September 2013 2016<br>
+                  Genre : Action-Adventure Game
+              </div>
+              <div class="card-action">
+                <a href="#game1" class="btn orange modal-trigger">More details</a>
+              </div>
+              <div class="modal bottom-sheet modal-fixed-footer" id="game1">
+                <div class="modal-content">
+                  <h4>Hey</h4>
+                  <p>95% Google Users Like this Game<br>
+                    Platforms : PlayStation 4, Microsoft Windows, Xbox One<br>
+                  </p>
+                </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="btn red">Disagree</a>
+                    <a href="" class="btn green">Agree</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+</div>
+ <!-- Cmpiled and minified JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ <script>
+   $(document).ready(function(){
+     $('.modal').modal();
+     $('.sidenav').sidenav();
+   });
+ </script>
+</body>
+</html>
